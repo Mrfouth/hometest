@@ -1,24 +1,32 @@
 # README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
 * Ruby version
 
-* System dependencies
+ruby 2.3.1
 
 * Configuration
 
-* Database creation
+bundle install
 
-* Database initialization
+* Database creation and Database initialization
+
+rake db:migrate
 
 * How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+rake test
 
-* Deployment instructions
+* How to run server
 
-* ...
+rails s
+
+In browser
+
+localhost:3000
+
+* API
+
+current version v1
+
+http://localhost:3000/api/v1
+
+then get {"version":"v1"}
