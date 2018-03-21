@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root :to => 'users#index'
 
-  mount Friends::API => '/api/'
+  mount Friends::API => '/'
 
   get '/404' => 'errors#error_404'
   get '/422' => 'errors#error_422'
